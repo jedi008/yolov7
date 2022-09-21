@@ -38,6 +38,7 @@ def detect(save_img=False):
     if trace:
         model = TracedModel(model, device, opt.img_size)
 
+    half = False
     if half:
         model.half()  # to FP16
 
